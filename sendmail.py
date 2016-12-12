@@ -66,7 +66,7 @@ def genCHTML(mjson):
     return retstr
 
 def sendjson(mcontent,mail_to):
-    outfp=open("/Users/xiamc/githouse/testmen/sendmail.log","w")   
+    outfp=open("./sendmail.log","w")   
     outfp.write(mcontent)
     mjson=json.loads("".join(open(mcontent,"r").readlines()))
     outfp.write("url:"+mjson["url"])

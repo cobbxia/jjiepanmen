@@ -80,8 +80,6 @@ def get_xml_data(filename):
     print(type(sql_nodes))
     print("nodenum:%d" % (nodenum))
     sqldict={}
-    #projectname="alimama_algo_dev"
-    #sqlDataPath="/home/admin/mingchao.xiamc/pydata/verify/logs/sqldata/"+projectname
     projectname=g_conf["projectname"]
     sqlDataPath=g_conf["sqldir"]+"/" + projectname
     do_cmd("mkdir -p %s" % (sqlDataPath))
